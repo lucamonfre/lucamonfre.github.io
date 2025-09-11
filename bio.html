@@ -33,7 +33,7 @@
     <tbody>
         <tr>
             <td align="center" valign="top">
-                <p>Luca Monfre is a <span id="my-age"></span> year old multidisciplinary artist
+                <p>Luca Monfre is a 24 year old multidisciplinary artist
                  from Milwaukee, WI. Luca Monfre studied at the Milwaukee
                  Institute of Art and Design. Luca Monfre is an artist
                  who focuses on the appropriation of digital imagery
@@ -46,6 +46,7 @@
                 "The Human_body tomorrow" exhibition at Some Fools Basement, 
                 the digital nostalgia exhibition at Between Two Galleries as well 
                 as in the MIAD Senior Thesis exhibition.</p>
+                
             </td>
         </tr>
     </tbody>
@@ -79,21 +80,5 @@
     </table>
     </center>
     </font>
-    <script>
-       function calculateAge(birthdate) {
-    const today = new Date();
-    const birthDate = new Date(birthdate);
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
-    return age;
-  }
-
-  const myBirthDate = '2001/07/30'; // Change this to your birthdate (YYYY/MM/DD)
-  const ageElement = document.getElementById('my-age');
-  ageElement.textContent = calculateAge(myBirthDate);
-      </script>
 </body>
 </html>
